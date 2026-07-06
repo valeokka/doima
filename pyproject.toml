@@ -1,7 +1,7 @@
 [project]
-name = "dvoe-bot"
+name = "doima-bot"
 version = "0.1.0"
-description = "Telegram-бот «Двое» — единый хаб пары: календарь, идеи, поручения, покупки, даты и желания"
+description = "Telegram-бот «Дойма» — единый хаб пары: календарь, идеи, поручения, покупки, даты и желания"
 requires-python = ">=3.12"
 dependencies = [
     "aiogram>=3.15",

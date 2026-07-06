@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     bot_token: str = ""
-    db_path: str = "dvoe.sqlite3"
+    db_path: str = "doima.sqlite3"
     default_tz: str = "Europe/Moscow"
 
 

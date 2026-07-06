@@ -1,4 +1,4 @@
-# «Двое» — Telegram-бот для пар
+# «Дойма» — Telegram-бот для пар
 
 Единый хаб пары: совместный календарь, идеи «куда сходить», поручения друг другу с мгновенными уведомлениями, список покупок, важные даты и личные списки желаний.
 
@@ -26,22 +26,22 @@ cp .env.example .env     # вписать BOT_TOKEN
 .venv/bin/python -m bot.main
 ```
 
-Работает через long polling — домен и HTTPS не нужны. БД — один файл SQLite (`dvoe.sqlite3`), бэкап = копия файла.
+Работает через long polling — домен и HTTPS не нужны. БД — один файл SQLite (`doima.sqlite3`), бэкап = копия файла.
 
 ### Как сервис (systemd)
 
-`/etc/systemd/system/dvoe-bot.service`:
+`/etc/systemd/system/doima-bot.service`:
 
 ```ini
 [Unit]
-Description=Dvoe Telegram bot
+Description=Doima Telegram bot
 After=network-online.target
 Wants=network-online.target
 
 [Service]
-User=dvoe
-WorkingDirectory=/opt/dvoe-bot
-ExecStart=/opt/dvoe-bot/.venv/bin/python -m bot.main
+User=doima
+WorkingDirectory=/opt/doima-bot
+ExecStart=/opt/doima-bot/.venv/bin/python -m bot.main
 Restart=always
 RestartSec=5
 
@@ -50,7 +50,7 @@ WantedBy=multi-user.target
 ```
 
 ```bash
-sudo systemctl enable --now dvoe-bot
+sudo systemctl enable --now doima-bot
 ```
 
 Рестарты безопасны: при старте бот отправляет все напоминания, созревшие за время простоя.

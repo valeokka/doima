@@ -1,0 +1,25 @@
+[project]
+name = "dvoe-bot"
+version = "0.1.0"
+description = "Telegram-бот «Двое» — единый хаб пары: календарь, идеи, поручения, покупки, даты и желания"
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram>=3.15",
+    "sqlalchemy>=2.0",
+    "aiosqlite>=0.20",
+    "pydantic-settings>=2.4",
+    "tzdata>=2024.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.setuptools]
+packages = ["bot", "bot.services", "bot.handlers"]

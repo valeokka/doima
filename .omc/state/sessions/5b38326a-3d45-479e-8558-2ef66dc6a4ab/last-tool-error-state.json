@@ -1,0 +1,7 @@
+{
+  "tool_name": "PowerShell",
+  "tool_input_preview": "{\"command\":\"cd C:\\\\AI\\\\doima; .\\\\.venv\\\\Scripts\\\\python -m pytest -q 2>&1 | Select-Object -Last 25\",\"timeout\":180000,\"description\":\"Run pytest suite\"}",
+  "error": "Exit code 1\n            # ImportError: If package_name doesn't exist (e.g. if tzdata is not\r\n            #   installed, or if there's an error in the folder name like\r\n            #   Amrica/New_York)\r\n            # FileNotFoundError: If resource_name doesn't exist in the package\r\n            #   (e.g. Europe/Krasnoy)\r\n            # UnicodeEncodeError: If package_name or resource_name are not UTF-8,\r\n            #   such as keys containing a surrogate character.\r\n            # IsADirectoryError:...",
+  "timestamp": "2026-07-06T10:35:08.101Z",
+  "retry_count": 1
+}

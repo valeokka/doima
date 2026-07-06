@@ -1,0 +1,9 @@
+{"t":0,"agent":"system","event":"keyword_detected","keyword":"deep-interview"}
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"oh-my-claudecode:plan"}
+{"t":0,"agent":"a6e1a76","agent_type":"architect","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a426d1c","agent_type":"architect","event":"agent_stop","success":true,"duration_ms":32429}
+{"t":0,"agent":"a6e1a76","agent_type":"architect","event":"agent_stop","success":true,"duration_ms":147731}
+{"t":0,"agent":"a8b3ebe","agent_type":"critic","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a86d63e","agent_type":"critic","event":"agent_stop","success":true,"duration_ms":32598}
+{"t":0,"agent":"ab3505b","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}
+{"t":0,"agent":"a8b3ebe","agent_type":"critic","event":"agent_stop","success":true,"duration_ms":90476}
